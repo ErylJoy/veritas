@@ -1,0 +1,10 @@
+go_binary(
+    name = "janus",
+    srcs = ["main.go"],
+    deps = [],
+)
+
+go_library(
+    name = "janus"
+    importpath = "//src/janus"
+)
