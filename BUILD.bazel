@@ -1,4 +1,4 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix
+# gazelle:prefix github.com/ErylJoy/veritas
 gazelle(name = "gazelle")
