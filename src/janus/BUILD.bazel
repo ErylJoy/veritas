@@ -1,8 +1,0 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_library")
-
-go_library(
-    name = "janus",
-    srcs = ["main.go"],
-    importpath = "github.com/ErylJoy/veritas/src/janus",
-    visibility = ["//visibility:public"],
-)
