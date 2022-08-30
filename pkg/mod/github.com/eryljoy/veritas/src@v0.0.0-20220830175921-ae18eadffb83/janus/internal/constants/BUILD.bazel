@@ -1,8 +1,0 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_library")
-
-go_library(
-    name = "constants",
-    srcs = ["regexes.go"],
-    importpath = "github.com/ErylJoy/veritas/src/janus/internal/constants",
-    visibility = ["//src/janus:__public__"],
-)

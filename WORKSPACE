@@ -31,6 +31,10 @@ load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_depe
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 load("@com_google_protobuf//:protobuf_deps.bzl", "protobuf_deps")
 load("//:deps.bzl", "go_dependencies")
+load("//:src/go.bzl", "go_dependencies")
+
+# gazelle:repository_macro src/go.bzl%go_dependencies
+go_dependencies()
 
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()
