@@ -1,4 +1,4 @@
-module example.com/mod
+module github.com/eryljoy/veritas
 
 go 1.17
 
