@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "internal",
+    srcs = ["service.go"],
+    importpath = "github.com/ErylJoy/veritas/src/janus/internal",
+    visibility = ["//src/janus:__subpackages__"],
+)
+
+go_test(
+    name = "internal_test",
+    srcs = ["service_test.go"],
+    embed = [":internal"],
+    deps = ["@com_github_stretchr_testify//assert:go_default_library"],
+)

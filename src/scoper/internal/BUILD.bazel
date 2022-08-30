@@ -1,0 +1,8 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "internal",
+    srcs = ["service.go"],
+    importpath = "github.com/eryljoy/veritas/src/scoper/internal",
+    visibility = ["//src:__subpackages__"],
+)
